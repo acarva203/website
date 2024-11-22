@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <main id="main">
+  <head>
+  <ul class="navbar">
+  <li class="nav-list"><a href="#photo">Who am I?</a></li>
+  <li class="nav-list"><a href="#hobbies">Hobbies</a></li>
+  <li class="nav-list"><a href="#fun-facts">Fun Facts</a></li>
+  <li class="nav-list"><a href="#faq">FAQ</a></li>
+  <li class="nav-list"><a href="#linkedin">Linkedin</a></li>
+</ul></head>
+
+    <body>
+    <div class="background-photo"><div class="welcome">
+    <h1 class="welcome">Welcome to my personal website!</h1>
+    </div>
+    </div>
+      <div class="masthead">
+
+
+        <h1 id="title">Aishwari Sirur</h1>
+      
+        <p class="life">Programmer and Singer</p>
+        <div id="photo">
+
+        <div id="img-div">
+          <img src="https://media.licdn.com/dms/image/v2/D5603AQFPmK4rFssoqQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1723159928245?e=2147483647&v=beta&t=pSInwMiL_48dhkaK2qThMc1-8vl6lg-kx_4Luw0YkgA" id="image"></img>
+          <figcaption id="img-caption">Me graduating high school</figcaption>
+        </div>
+        </div>
+      </div>
+      <a href="https://github.com/acarva203" target="_blank" id="github-link" class="button-link">See my Github here!</a>
+     <div class="info">
+       <div class="container">
+        <div class="column" id="hobbies"><h1>Hobbies
+        </h1>
+        <ul><h3>
+        <li>Knitting</li>
+        <li>Biking</li>
+        <li>Reading</li>
+        <li>Singing</li>
+        <li>Doing the impossible</li></h3></ul></div>
+        <div class="column" id="fun-facts"><h1>Fun Facts</h1>
+        <ul><h3>
+        <li>I have never hit a bullseye</li>
+        <li>I love seeing the Davis water tower every morning</li>
+        <li>I love to look on the bright side</li>
+        <li>I've never tried a mangosteen before</li></h3></ul>
+        </div>
+    </div>
+        </div>
+<div id="faq" class="faq">
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-header">What is your major?</button>
+            <div class="accordion-content">
+                <p>I'm a first-year Computer Science major who is also interested in exploring how it can relate to several other fields. Recently, I've been looking into potential minors such as Economics, Tech Management, or the newly created Data in Society.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">What's my favorite place for lunch on campus?</button>
+            <div class="accordion-content">
+                <p>I love to eat at the Coho's food-court-esque counters especially the chicken pho. I also enjoy the crepes at the Silo. But, of course, I'm always open to more suggestions.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">How many units am I taking this quarter?</button>
+            <div class="accordion-content">
+                <p>I'm taking 15 units: 1 CS class, MAT 21C, Intermediate French, a computer science seminar, and a machine-learning first year seminar. It has been kind of hard to balance, but it's working out alright for now.</p>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <button class="accordion-header">What programming languages do you know?</button>
+            <div class="accordion-content">
+                <p>I know a little bit of everything: Python, Java, HTML, CSS, R, and currently learning C with Butner in ECS 36A. Unfortunately, it's hard to keep track of languages past a certain point, so while I'm not proficient in many of the languages I mentioned, it wouldn't take me too long to catch me up to speed. </p>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        // JavaScript to toggle the accordion items
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+
+                // Toggle the active class to show/hide the content
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+        <div class="footer">
+        <p id="linkedin">If you would like to learn more about me, please see my <a href="https://www.linkedin.com/in/aishwari-sirur/" target="_blank" id="tribute-link">Linkedin</a>.</p>
+      </div>
+    </body>
+  </main>
+</html>

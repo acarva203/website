@@ -1,0 +1,232 @@
+img{
+display: block;
+max-width: 100%;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+}
+
+h1,.life{
+text-align:center;
+}
+.background-photo{  
+background-image: url(wallpaper_website.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+}
+
+div .welcome{
+padding: 10% 0;
+font-size: 2.5em;
+-webkit-text-stroke: 4px #0B3954; 
+
+}
+h1{
+padding-top: 10px;
+padding-bottom: 10px;
+}
+p{
+padding: 10px 0px;
+
+}
+figcaption{
+text-align: center;
+padding: 10px 0;
+}
+.info{
+margin: 14px 20px;
+background-color:#087E8B;
+color: #ffffff;
+padding: 20px;
+}
+.footer{
+text-align: center;
+color:#BFD7EA;
+}
+body{
+font-family: Tahoma, "Comic Sans MS";
+background: #0B3954;
+color: #BFD7EA;
+
+}
+a{
+color:#BFD7EA;
+}
+a:visited{
+color:#BFE9EA;
+}
+
+@media screen and (max-width: 600px) {
+.column {
+width: 100%;
+}
+}
+.container {
+    display: flex;
+    justify-content: space-between; /* Distributes the space between the columns */
+    gap: 20px; /* Adds space between columns */
+    padding: 10px;
+}
+
+/* Column styles */
+.column {
+    flex: 1; /* Ensures the columns take up equal space */
+    padding: 20px;
+    background-color: #FF5A5F;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    color: #fffff;
+}
+
+h3{
+
+font-weight: normal;
+padding-left: 30px;
+
+
+}
+.button {
+background-color: #C81D25; /* red */
+border: none;
+color: white;
+padding: 15px 30px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 0 37%;
+width: 20%;
+border: 3px solid red; 
+border-radius: 5px;
+cursor: pointer;
+}
+.button:hover {
+    background-color:#9e0308 ;
+}
+
+}
+@media (max-width: 768px) {
+    .center-button {
+        padding: 12px 25px; 
+    }}
+
+
+.navbar {
+    display: flex;
+    position:sticky;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    background: #FF5A5F;
+    background-blend-mode: darken;
+    background-size: cover;
+    color: white;
+    padding: 10px 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 20px;
+    border-right:1px solid #ffffff;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+    border-right:0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+    color: #ffd700;
+    /* Change the color on hover */
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+
+.accordion {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.accordion-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.accordion-header {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0B3954;
+    color: #fff;
+    cursor: pointer;
+    text-align: left;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #0B4554;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none; /* Initially hidden */
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+/* Show content when the header is clicked */
+.accordion-item.active .accordion-content {
+    display: block;
+}
+.faq{
+    margin: 40px 0px;
+    padding: 20px 0px;
+    background-color:#BFD7EA;
+    color: #0B3954;
+}
+
+.button-link {
+    font-size: 16px;
+    display: inline-block; 
+
+
+    background-color: #C81D25; /* red */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 37%;
+    width: 20%;
+    border: 3px solid red; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-link:hover {
+    background-color: #9e0308 ;
+}
