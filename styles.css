@@ -46,9 +46,8 @@ border: .5px solid #856ba8;
 }
 .footer{
 text-align: center;
-color:#BFD7EA;}
-p.footer{
-font-size: 1.5rem;
+color:#BFD7EA;
+font-size: medium;
 }
 body{
 font-family: Tahoma, "Comic Sans MS";
