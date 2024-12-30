@@ -261,3 +261,7 @@ img.land{
   margin: 0;
   text-align: left;
 }
+
+.footer{
+    text-size-adjust: 40px;
+}
