@@ -47,6 +47,8 @@ border: .5px solid #856ba8;
 .footer{
 text-align: center;
 color:#BFD7EA;
+font-size: 40px;
+
 }
 body{
 font-family: Tahoma, "Comic Sans MS";
@@ -262,6 +264,3 @@ img.land{
   text-align: left;
 }
 
-.footer{
-    text-size-adjust: 40px;
-}
