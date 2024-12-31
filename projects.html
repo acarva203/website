@@ -27,8 +27,71 @@
   </ul>
   <li>Caesar Cipher Bot
   </li>
-    <script type="py" src="./caesar-cipher.py" worker></script>
+    <!-- <script type="py" src="./caesar-cipher.py" worker></script> -->
 
+<h1>Caesar Cipher Encrypt/Decrypt</h1>
+
+<!-- Input fields for message, key, and mode -->
+<label for="message">Message: </label>
+<input type="text" id="message" placeholder="Enter your message"><br><br>
+
+<label for="key">Key (0-25): </label>
+<input type="number" id="key" min="0" max="25"><br><br>
+
+<label for="mode">Mode (encrypt/decrypt): </label>
+<input type="text" id="mode" placeholder="encrypt or decrypt"><br><br>
+
+<button onclick="processMessage()">Submit</button>
+
+<p id="output"></p>
+
+<!-- PyScript for processing the cipher -->
+<py-script>
+    from js import document
+
+    # Global variables
+    possibleCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    shiftedMessage = ""
+
+    def process_message():
+        # Get values from the input fields
+        initialMessage = document.getElementById("message").value
+        key = int(document.getElementById("key").value)
+        mode = document.getElementById("mode").value
+
+        shiftedMessage = ""  # Reset the shiftedMessage for each new input
+
+        for a in initialMessage:
+            # Encrypt or decrypt message
+            if a.upper() in possibleCharacters:
+                initialPosition = possibleCharacters.find(a.upper())
+                if mode.lower() == "encrypt":
+                    shiftedPosition = initialPosition + key
+                elif mode.lower() == "decrypt":
+                    shiftedPosition = initialPosition - key
+                
+                # Wrap around positions if needed
+                if shiftedPosition >= len(possibleCharacters):
+                    shiftedPosition = shiftedPosition - len(possibleCharacters)
+                elif shiftedPosition < 0:
+                    shiftedPosition = shiftedPosition + len(possibleCharacters)
+                
+                shiftedChar = possibleCharacters[shiftedPosition]
+                # Preserve original case
+                if a.islower():
+                    shiftedMessage += shiftedChar.lower()
+                else:
+                    shiftedMessage += shiftedChar
+            else:
+                # If character is not in the alphabet, just append it as it is
+                shiftedMessage += a
+
+        # Display the shifted message
+        document.getElementById("output").innerText = f"Your {mode.lower()}ed message is: {shiftedMessage}"
+
+    # Expose the process_message function to the button click
+    document.querySelector("button").onclick = process_message
+</py-script>
 </div>
   </html>
   
